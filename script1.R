@@ -24,7 +24,7 @@ rmarkdown::render("steakParams.Rmd",
 
 # R code to create the custom function
 render_report <-function(regionvar){
-    template <-"steakArticleParams.Rmd"
+    template <-"steakParams.Rmd"
     outfile <-sprintf("steakArticle_%s.html",regionvar)
     parameters <-list(region = regionvar)
     rmarkdown::render(template,
