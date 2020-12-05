@@ -2,7 +2,7 @@ library(fivethirtyeight)
 library(tidyverse)
 
 data("steak_survey", package="fivethirtyeight")
-View(steak_survey)
+# View(steak_survey)
 
 sdat <- na.omit(steak_survey) %>%
     filter(region=="Mountain")
